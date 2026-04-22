@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Performance Report - Employee Performance Evaluation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Performance Report</h1>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="employees.html">Employees</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="development.html">Development</a>
+    <a href="report.html">Performance Report</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <div class="section-head">
+        <h2>Employee Performance Summary</h2>
+        <button onclick="loadPerformanceReport()">Load Report</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Average Rating</th>
+            <th>Total Reviews</th>
+          </tr>
+        </thead>
+        <tbody id="reportTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

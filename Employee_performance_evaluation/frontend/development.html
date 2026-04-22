@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development & Rewards - Employee Performance Evaluation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Development & Rewards Module</h1>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="employees.html">Employees</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="development.html">Development</a>
+    <a href="report.html">Performance Report</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Training & Certification Section -->
+    <div class="card">
+      <div class="section-head">
+        <h2>Training & Certification Overview</h2>
+        <button onclick="loadDevelopmentData()">Load Development Data</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Training Title</th>
+            <th>Skill</th>
+            <th>Certification Status</th>
+          </tr>
+        </thead>
+        <tbody id="developmentTableBody">
+          <!-- Training + Certification data -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rewards Section -->
+    <div class="card">
+      <div class="section-head">
+        <h2>Rewards & Recognition Overview</h2>
+        <button onclick="loadRewardsData()">Load Rewards Data</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Bonus</th>
+            <th>Promotion</th>
+            <th>Recognition</th>
+          </tr>
+        </thead>
+        <tbody id="rewardsTableBody">
+          <!-- Bonus + Promotion + Recognition data -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="hero-grid">
+      <div class="stat-box">
+        <h3>Training Module</h3>
+        <p>
+          Covers employee training programs, enrollments, and skill development tracking.
+        </p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Certification Module</h3>
+        <p>
+          Tracks certifications achieved by employees based on skill and training progress.
+        </p>
+      </div>
+
+      <div class="stat-box">
+        <h3>Rewards Module</h3>
+        <p>
+          Includes bonus allocation, promotions, and employee recognition based on performance.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

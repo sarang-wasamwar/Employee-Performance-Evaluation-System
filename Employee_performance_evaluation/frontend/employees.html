@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employees - Employee Performance Evaluation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Employee Management</h1>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="employees.html">Employees</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="development.html">Development</a>
+    <a href="report.html">Performance Report</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Add New Employee</h2>
+      <form id="employeeForm">
+        <input type="number" id="employeeId" placeholder="Employee ID" required />
+        <input type="text" id="employeeName" placeholder="Employee Name" required />
+        <input type="number" id="departmentId" placeholder="Department ID" required />
+        <input type="number" id="managerId" placeholder="Manager ID (optional)" />
+        <button type="submit">Add Employee</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <div class="section-head">
+        <h2>Employee List</h2>
+        <button onclick="loadEmployees()">Load Employees</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTableBody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

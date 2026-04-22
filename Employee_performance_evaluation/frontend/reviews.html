@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews - Employee Performance Evaluation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Performance Reviews</h1>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="employees.html">Employees</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="development.html">Development</a>
+    <a href="report.html">Performance Report</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Add Review</h2>
+      <form id="reviewForm">
+        <input type="number" id="reviewId" placeholder="Review ID" required />
+        <input type="number" id="reviewEmployeeId" placeholder="Employee ID" required />
+        <input type="number" id="reviewManagerId" placeholder="Manager ID (optional)" />
+        <input type="number" step="0.1" min="0" max="5" id="rating" placeholder="Rating (0 - 5)" required />
+        <input type="date" id="reviewDate" required />
+        <button type="submit">Add Review</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <div class="section-head">
+        <h2>Review List</h2>
+        <button onclick="loadReviews()">Load Reviews</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Review ID</th>
+            <th>Employee</th>
+            <th>Rating</th>
+            <th>Review Date</th>
+          </tr>
+        </thead>
+        <tbody id="reviewTableBody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
