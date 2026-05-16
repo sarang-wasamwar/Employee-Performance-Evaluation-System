@@ -307,7 +307,7 @@ http://localhost:3000/employees
 
 * **Ayush Thakare**
 Computer Engineering Student
-GitHub: https://github.com/Ayu5h-2005
+[GitHub: https://github.com/Ayu5h-2005]
 
 ---
 
