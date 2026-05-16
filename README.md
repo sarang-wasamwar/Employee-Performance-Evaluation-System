@@ -302,11 +302,11 @@ http://localhost:3000/employees
 
 ## 👨‍💻 Contributors
 
-* **Sarang Wasamwar**
+* **Sarang Wasamwar**  
   Computer Engineering Student
 
-* **Ayush Thakare**
-Computer Engineering Student
+* **Ayush Thakare**  
+Computer Engineering Student  
 [GitHub: https://github.com/Ayu5h-2005]
 
 ---
